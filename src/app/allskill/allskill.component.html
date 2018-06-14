@@ -1,0 +1,111 @@
+<div class="uk-child-width-1-2@m uk-padding">
+
+  <table class="uk-table uk-table-striped">
+    <thead>
+        <tr>
+            <th>المفتاح</th>
+            <th>الاسم</th>
+            <th>المهارة</th>
+            <th>المحافظة</th>
+           <!-- <th>السعر</th>   <th>الهاتف</th>-->
+           <!-- <th>تعديل</th>
+            <th>حذف</th> -->
+
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let iteam of itemarray">
+            <td>{{iteam.$key}}</td>
+            <td> {{iteam.name}}</td>
+            <!--<td> {{iteam.phone}}</td> <td> {{iteam.price}}</td>-->
+            <td> {{iteam.skill}}</td>
+            <td> {{iteam.provice}}</td>
+            <td ><button class="uk-button uk-button-primary" (click)="morinfo(iteam.$key)">معلومات</button>
+            </td>
+            <td >
+            <!--  <a class="uk-button uk-button-primary" href="#modal-sections" uk-toggle (click)="editform(iteam.$key)">تعديل</a>
+            </td> -->
+
+           <!-- <td><button class="uk-button uk-button-danger" (click)="delete(iteam.$key)" >حذف</button>
+            </td> -->
+
+              <!--  <div id="modal-sections" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <h2 class="uk-modal-title">تعديل</h2>
+                        </div>
+
+                        <div class="uk-modal-body">
+
+                          <fieldset class="uk-fieldset">
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="اسمك" name="name" [(ngModel)]="data.name" >
+                            </div>
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="رقم الهاتف"  [(ngModel)]="data.phone">
+                            </div>
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="المهارة"  [(ngModel)]="data.skill">
+                            </div>
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="المحافظة"  [(ngModel)]="data.provice">
+                            </div>
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="السعر"  [(ngModel)]="data.price">
+                            </div>
+                            <div class="uk-margin">
+                                <textarea class="uk-textarea" rows="5" placeholder="ملاحظات" name="comments"  [(ngModel)]="data.comments"></textarea>
+                            </div>
+                        </fieldset>
+
+                        </div>
+
+                        <div class="uk-modal-footer uk-text-right">
+                            <button class="uk-button uk-button-primary" type="button"
+                            (click)="onedite(iteam.$key)">حفظ</button>
+                            <button class="uk-button uk-button-default uk-modal-close" type="button">عودة</button>
+
+                        </div>
+
+                    </div>
+
+                </div>-->
+        </tr>
+    </tbody>
+  </table>
+  </div>
+
+
+
+
+
+
+
+
+<!--
+<div class="uk-child-width-1-2@m uk-padding" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="assets/img/2.jpg" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Bottom</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="uk-card-media-bottom">
+                <img src="assets/img/3.jpg" alt="">            </div>
+        </div>
+    </div>
+</div>
+-->

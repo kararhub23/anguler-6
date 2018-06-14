@@ -1,0 +1,40 @@
+<div class="uk-padding">
+
+   <div class="uk-card uk-card-default uk-card-body">
+
+        <h3 class="uk-card-title">اضف مهارتك</h3>
+
+
+
+
+  <fieldset class="uk-fieldset">
+
+      <div class="uk-margin">
+          <input class="uk-input" type="text" placeholder="اسمك" name="name" [(ngModel)]="data.name" >
+      </div>
+      <div class="uk-margin">
+          <input class="uk-input" type="text" placeholder="رقم الهاتف" [(ngModel)]="data.phone">
+      </div>
+      <div class="uk-margin">
+          <input class="uk-input" type="text" placeholder="المهارة" [(ngModel)]="data.skill">
+      </div>
+      <div class="uk-margin">
+          <input class="uk-input" type="text" placeholder="المحافظة" [(ngModel)]="data.provice">
+      </div>
+      <div class="uk-margin">
+          <input class="uk-input" type="text" placeholder="السعر" [(ngModel)]="data.price">
+      </div>
+
+
+      <div class="uk-margin">
+          <textarea class="uk-textarea" rows="5" placeholder="ملاحظات" name="comments" [(ngModel)]="data.comments"></textarea>
+      </div>
+      <button class="uk-button uk-button-primary" (click)="insertskill()">اضافة</button>
+
+  </fieldset>
+
+
+
+</div>
+
+</div>
